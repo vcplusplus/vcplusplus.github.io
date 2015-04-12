@@ -18,7 +18,6 @@ body {
   right: 0;
   left: 0;
   z-index: 20;
-  color: #E2427F;
 }
 
 /* Flip around the padding for proper display in narrow viewports */
@@ -29,9 +28,18 @@ body {
 .navbar-wrapper .navbar {
   padding-right: 15px;
   padding-left: 15px;
+  background-color: #E2427F;
 }
 .navbar-wrapper .navbar .container {
   width: auto;
+}
+
+.navbar-brand {
+  color: white;
+  font-size: 42;
+}
+.navbar-nav {
+  color: white;
 }
 
 
