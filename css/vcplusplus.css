@@ -42,6 +42,115 @@ body {
   color: white;
 }
 
+/* navbar-vc styling */
+
+.navbar-vc {
+  background-color: #e2427f;
+  border-color: #b83265
+}
+.navbar-vc .navbar-brand {
+  color: #f0f0f0;
+  font-family: "Courier New",Courier,monospace;
+  font-weight: bold;
+  font-size: 3em
+}
+.navbar-vc .navbar-brand:hover,
+.navbar-vc .navbar-brand:focus {
+  color: #fff;
+  background-color: transparent;
+}
+.navbar-vc .navbar-text {
+  color: #f0f0f0;
+}
+.navbar-vc .navbar-nav > li > a {
+  color: #f0f0f0;
+}
+.navbar-vc .navbar-nav > li > a:hover,
+.navbar-vc .navbar-nav > li > a:focus {
+  color: #fff;
+  background-color: transparent;
+}
+.navbar-vc .navbar-nav > .active > a,
+.navbar-vc .navbar-nav > .active > a:hover,
+.navbar-vc .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #b83265;
+}
+.navbar-vc .navbar-nav > .disabled > a,
+.navbar-vc .navbar-nav > .disabled > a:hover,
+.navbar-vc .navbar-nav > .disabled > a:focus {
+  color: #444;
+  background-color: transparent;
+}
+.navbar-vc .navbar-toggle {
+  border-color: #b83265;
+}
+.navbar-vc .navbar-toggle:hover,
+.navbar-vc .navbar-toggle:focus {
+  background-color: #b83265;
+}
+.navbar-vc .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.navbar-vc .navbar-collapse,
+.navbar-vc .navbar-form {
+  border-color: #b83265;
+}
+.navbar-vc .navbar-nav > .open > a,
+.navbar-vc .navbar-nav > .open > a:hover,
+.navbar-vc .navbar-nav > .open > a:focus {
+  color: #fff;
+  background-color: #b83265;
+}
+@media (max-width: 767px) {
+  .navbar-vc .navbar-nav .open .dropdown-menu > .dropdown-header {
+    border-color: #b83265;
+  }
+  .navbar-vc .navbar-nav .open .dropdown-menu .divider {
+    background-color: #b83265;
+  }
+  .navbar-vc .navbar-nav .open .dropdown-menu > li > a {
+    color: #f0f0f0;
+  }
+  .navbar-vc .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-vc .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #fff;
+    background-color: transparent;
+  }
+  .navbar-vc .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-vc .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-vc .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #fff;
+    background-color: #b83265;
+  }
+  .navbar-vc .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-vc .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-vc .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #ededed;
+    background-color: transparent;
+  }
+}
+.navbar-vc .navbar-link {
+  color: #f0f0f0;
+}
+.navbar-vc .navbar-link:hover {
+  color: #fff;
+}
+.navbar-vc .btn-link {
+  color: #f0f0f0;
+}
+.navbar-vc .btn-link:hover,
+.navbar-vc .btn-link:focus {
+  color: #fff;
+}
+.navbar-vc .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-vc .btn-link:hover,
+.navbar-vc .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-vc .btn-link:focus {
+  color: #ededed;
+}
+
+
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
