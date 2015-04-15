@@ -48,7 +48,7 @@ body {
   border-color: #b83265
 }
 .navbar-vc .navbar-brand {
-  color: #f0f0f0;
+  color: #E8E8E8;
   font-family: "Courier New",Courier,monospace;
   font-weight: bold;
   font-size: 3em
@@ -59,15 +59,15 @@ body {
   background-color: transparent;
 }
 .navbar-vc .navbar-text {
-  color: #f0f0f0;
+  color: #E8E8E8;
 }
 .navbar-vc .navbar-nav > li > a {
-  color: #f0f0f0;
+  color: #E8E8E8;
 }
 .navbar-vc .navbar-nav > li > a:hover,
 .navbar-vc .navbar-nav > li > a:focus {
   color: #fff;
-  background-color: transparent;
+  background-color: #ED5891;
 }
 .navbar-vc .navbar-nav > .active > a,
 .navbar-vc .navbar-nav > .active > a:hover,
@@ -114,7 +114,7 @@ body {
   .navbar-vc .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-vc .navbar-nav .open .dropdown-menu > li > a:focus {
     color: #fff;
-    background-color: transparent;
+    background-color: #ED5891;
   }
   .navbar-vc .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-vc .navbar-nav .open .dropdown-menu > .active > a:hover,
@@ -130,13 +130,13 @@ body {
   }
 }
 .navbar-vc .navbar-link {
-  color: #f0f0f0;
+  color: #E8E8E8;
 }
 .navbar-vc .navbar-link:hover {
   color: #fff;
 }
 .navbar-vc .btn-link {
-  color: #f0f0f0;
+  color: #E8E8E8;
 }
 .navbar-vc .btn-link:hover,
 .navbar-vc .btn-link:focus {
