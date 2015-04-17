@@ -44,12 +44,14 @@ body {
 /* navbar-vc styling */
 
 .navbar-vc {
+  font-family: Verdana, Arial, sans-serif;
+  text-transform: uppercase;
   background-color: #e2427f;
   border-color: #b83265
 }
 .navbar-vc .navbar-brand {
   color: #E8E8E8;
-  font-family: "Courier New",Courier,monospace;
+  font-family: "Courier New", Courier, monospace;
   font-weight: bold;
   font-size: 3em
 }
