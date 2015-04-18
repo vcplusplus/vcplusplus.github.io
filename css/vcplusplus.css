@@ -48,16 +48,16 @@ ul.nav.navbar-nav {
   background-color: #e2427f;
 }
 
-/* navbar-vc styling */
 
-/* Disabled navbar branding
+/* navbar-vc styling 
+---------------------*/
 
 .navbar-vc {
   font-family: Verdana, Arial, sans-serif;
   text-transform: uppercase;
-  background-color: #e2427f;
   border-color: #b83265
 }
+/* Disabled navbar branding
 .navbar-vc .navbar-brand {
   color: #E8E8E8;
   font-family: "Courier New", Courier, monospace;
@@ -164,15 +164,6 @@ fieldset[disabled] .navbar-vc .btn-link:focus {
   color: #ededed;
 }
 
-#parallelogram {
-  width: 150px;
-  height: 100px;
-  -webkit-transform: skew(20deg);
-     -moz-transform: skew(20deg);
-       -o-transform: skew(20deg);
-  background: #e2427f;
-}
-
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -186,9 +177,6 @@ fieldset[disabled] .navbar-vc .btn-link:focus {
 .carousel-caption {
   z-index: 10;
   background-color: gray;
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
-  border-radius: 20px;
   opacity: 0.9;
   filter: alpha(opacity=90); /* For IE8 and earlier */
 }
@@ -238,17 +226,6 @@ fieldset[disabled] .navbar-vc .btn-link:focus {
   letter-spacing: -1px;
 }
 
-
-/* FOOTER CSS
--------------------------------------------------- */
-footer {
-  background: #e2427f;
-  padding-right: 30px;
-  padding-left: 30px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  color: white;
-}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
