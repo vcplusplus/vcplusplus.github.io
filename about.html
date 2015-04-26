@@ -16,15 +16,22 @@
          padding: 40px 15px;
         text-align: center;
       }
+    .jumbotron{
+        margin-top: 50px;
+    }
   </style>
 
-    <title>Starter Template for Bootstrap</title>
+    <title>About | VC++</title>
+
+       <!-- Custom CSS -->
+    <link href="css/vcplusplus.css" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
-    <link href="./bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="starter-template.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -37,38 +44,61 @@
     <![endif]-->
   </head>
 
+  <!-- NAVBAR
+================================================== -->
   <body>
-
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-wrapper">
       <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Project name</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
+
+        <nav class="navbar navbar-vc navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html"><img src="assets/VC++_logo_no_bg.png" width="150" alt="VC++"></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resources.html">Resources</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
       </div>
-    </nav>
+    </div>
 
-    <div class="container">
+<div class="jumbotron container" style="
 
-      <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+
+background: url('stock.jpg');
+  background-position: 100%, 100%;
+    background-size: 100%, 100%;
+    background-attachment:fixed;
+    min-width:400px;
+    min-height:200px;
+    background-size: cover;
+     background-repeat:no-repeat;
+     display: compact;
+" >
+<div>
+
+     <div class="container">
+    <div class="col-md-8 col-md-offset-2">
+        <div class="jumbotron">
+      <h1>About Us</h1>
+      <p>VC++ -> making apps for Vassar students by Vassar students. </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In interdum mattis dolor sed vulputate. Vivamus eu fermentum lorem. Ut sed interdum massa. Phasellus aliquet, erat vel accumsan fermentum, metus sem luctus felis, gravida consectetur nunc enim eget dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam volutpat felis lorem, eget feugiat tellus pulvinar ac. Praesent dignissim mi eget enim interdum, quis imperdiet diam varius. In hac habitasse platea dictumst. Quisque varius convallis pellentesque. Praesent finibus semper orci, sed mattis mi eleifend ac. Quisque semper porttitor mattis. Vestibulum in nibh eu est volutpat bibendum nec vitae dui. Curabitur blandit consequat arcu nec commodo.</p>
       </div>
-
-    </div><!-- /.container -->
-
+    </div>
+  </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
