@@ -265,7 +265,7 @@ fieldset[disabled] .navbar-vc .btn-link:focus {
 
 
 .thumbnail {
-    position:absolute;
+    position:relative;
     overflow:hidden;
 }
  
