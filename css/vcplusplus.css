@@ -265,7 +265,7 @@ fieldset[disabled] .navbar-vc .btn-link:focus {
 
 
 .thumbnail {
-    position:relative;
+    position:absolute;
     overflow:hidden;
 }
  
@@ -273,7 +273,7 @@ fieldset[disabled] .navbar-vc .btn-link:focus {
     position:absolute;
     top:-100%;
     right:0;
-    background:rgba(66, 139, 202, 0.75);
+    background:rgba(226, 66, 127, .7);
     width:100%;
     height:100%;
     padding:2%;
@@ -289,3 +289,27 @@ fieldset[disabled] .navbar-vc .btn-link:focus {
 .thumbnail:hover .caption {
     top:0%;
 }
+
+.label-vc1 {
+    background-color:#949494;
+}
+.label-vc1:hover {
+   background-color: #555;
+}
+
+.label-vc2 {
+    background-color:#4c63ef;
+}
+.label-vc2:hover {
+   background-color: #303498;
+}
+
+.vcp {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* e2427f 949494 */ 
