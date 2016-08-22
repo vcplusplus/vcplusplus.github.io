@@ -1,0 +1,58 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: VC++
+email: vcplusplus@vassar.edu
+description: > # this means to ignore newlines until "baseurl:"
+  We're Vassar's Coders, Hackers, and Designers. We make things.
+  VC++ was started to give Vassar's programmers the practical skills
+  necessary to thrive in the tech industry, while also providing
+  Vassar College with a team of capable thinkers and doers. We focus
+  on mobile, web, and game development.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://vcplusplus.org" # the base hostname & protocol for your site
+twitter_username: vcplusplus
+github_username: vcplusplus
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+sass:
+    sass_dir: _sass
+include: ['_pages']
+
+# Permalinks
+permalink: pretty
+
+# Paginate
+paginate_path: "/blog/:num/"
+gems:
+  - jekyll-paginate
+paginate: 5
+
+# Collections
+collections:
+  projects:
+    output: true
+  team-members:
+    output: false
+
+defaults:
+  - scope:
+      path: ""      # empty string for all files
+      type: posts   # limit to posts
+    values:
+      is_post: true # automatically set is_post=true for all posts
+  - scope:
+      type: projects
+    values:
+      layout: project
+  - scope:
+      type: team-members
+    values:
+      layout: team-member

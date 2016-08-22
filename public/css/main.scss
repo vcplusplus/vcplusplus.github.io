@@ -1,0 +1,234 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+@import "color";
+@import "skeleton";
+@import "hamburgers/hamburgers"; // Thanks: https://jonsuh.com/hamburgers/
+
+html, body {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  line-height: 1.6;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #444;
+  padding: 0;
+  margin: 0;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.group:after,
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+$header-height: 60px;
+
+header.main {
+  position: relative;
+  display:block;
+  width: 100%;
+  background: $primary-color;
+  z-index: 999;
+}
+
+header.main h1 {
+  float: left;
+  font-size: 25px;
+  line-height: $header-height;
+  margin: 0;
+}
+
+header.main h1 a {
+  color: rgb(255,255,255);
+  text-decoration: none;
+}
+
+.main-nav .hamburger {
+  float: right;
+  padding-bottom: 0;
+}
+
+.main-nav ul {
+  position: fixed;
+  overflow: hidden;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  margin-top: $header-height;
+  transition: all .5s ease;
+  width: 100%;
+  background: rgba(0,0,0,.65);
+  list-style-type: none;
+  left: 0;
+}
+
+$nav-padding: 20px;
+
+.main-nav ul.is-active {
+  height: 100vh;
+  overflow: scroll;
+  padding-top: $nav-padding;
+  padding-bottom: $header-height + $nav-padding;
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  backdrop-filter: saturate(180%) blur(10px);
+}
+
+.main-nav ul li{
+  border-bottom: 1px solid rgba(255,255,255,.3);
+  width: 70%;
+  margin: 0 auto;
+}
+
+.main-nav ul li a {
+  display: block;
+  line-height: 50px;
+  width: 100%;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (min-width: 700px) {
+  .main-nav {
+    float: right;
+    display: inline-block;
+    position: relative;
+    height: $header-height;
+    width: auto;
+  }
+
+  .main-nav .hamburger {
+    display: none;
+  }
+
+  .main-nav ul {
+    position: relative;
+    height: auto;
+    width: auto;
+    overflow: auto;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    transition: none;
+  }
+
+  .main-nav ul li {
+    display: inline-block;
+    border: none;
+    width: auto;
+    margin: 0;
+  }
+
+  .main-nav ul li a {
+    line-height: 60px;
+    width: auto;
+    padding: 0 10px;
+    font-size: .92em;
+    margin-left: 2px;
+    height: auto;
+  }
+
+  .main-nav ul li a:hover,
+  .main-nav ul li a.active {
+    line-height: 56px;
+    border-bottom: 2px solid #fff;
+  }
+
+}
+
+section {
+  padding: 10px;
+}
+
+.button {
+  color: #eee;
+  font-size: 20px;
+  text-shadow: none;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  padding: 15px 20px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.button:hover {
+  text-decoration: underline;
+  color: #eee;
+}
+
+footer {
+  padding: 10px;
+  background: rgba(145, 6, 56, .95);
+  color: #eee;
+}
+
+.work_with_us_footer {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.work_with_us_footer h3 {
+  margin-bottom: 1rem;
+}
+
+.button_footer {
+  color: $accent-color;
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background: rgb(255,255,255);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.button_footer:hover {
+  color: $accent-color;
+}
+
+.main-footer {
+  font-size: .8em;
+  padding-bottom: 50px;
+}
+
+.main-footer h3 {
+  font-size: 2em;
+}
+
+.about_footer {
+  text-align: left;
+}
+
+@media ($bp-larger-than-phablet) {
+  .about_footer {
+    text-align: right;
+  }
+}
+
+.soc_media_footer {
+  text-align: left;
+}
+
+.soc_media_footer ul {
+  margin:0;
+  padding: 0;
+}
+
+.soc_media_footer li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0 3px;
+}

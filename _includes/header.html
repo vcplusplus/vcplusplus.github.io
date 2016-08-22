@@ -1,0 +1,23 @@
+
+<header class="main group">
+  <div class="container">
+    <h1><a href="{{ site.baseurl}}/">{{ site.title }}</a></h1>
+
+    <nav class="main-nav">
+      <button class="hamburger hamburger--spring-r" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+
+      <ul>
+        {% assign sorted = site.pages | sort: 'nav_position' %}
+        {% for my_page in sorted %}
+          {% if my_page.title %}
+          <li><a href="{{ my_page.url | prepend: site.basurl }}" class="{% if my_page.nav_special %}{{ my_page.nav_special }}{% endif %} {% if my_page.url == page.url %}active{% endif %}">{{ my_page.title }}</a>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>
