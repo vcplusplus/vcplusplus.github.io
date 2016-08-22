@@ -1069,7 +1069,13 @@ header.main h1 {
 
 header.main h1 a {
   color: white;
-  text-decoration: none; }
+  text-decoration: none;
+  font-weight: 500; }
+
+header.main h1 img {
+  height: 25px;
+  position: relative;
+  top: 3px; }
 
 .main-nav .hamburger {
   float: right;
