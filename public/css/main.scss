@@ -34,6 +34,11 @@ body {
   clear: both;
 }
 
+.mostly-text {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 $header-height: 60px;
 
 header.main {
@@ -238,4 +243,13 @@ footer {
   list-style-type: none;
   display: inline-block;
   padding: 0 3px;
+}
+
+a {
+  color: #167d9e;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
