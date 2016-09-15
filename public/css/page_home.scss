@@ -10,7 +10,8 @@
   background-size: cover;
   background-position: bottom center;
   min-height: 400px;
-  min-height: 100vh;
+  height: 100vh;
+  max-height: 700px;
 }
 
 .hero {
